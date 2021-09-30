@@ -1,4 +1,4 @@
-local_backend: true,
+local_backend: true
 backend:
   name: proxy
   proxy_url: http://localhost:8081/api/v1
@@ -8,7 +8,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
+  - name: 'blog2'
     label: 'Blog'
     folder: 'content/blog'
     format: 'frontmatter'

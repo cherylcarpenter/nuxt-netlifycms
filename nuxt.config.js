@@ -1,7 +1,14 @@
+import { resolve } from 'path'
+
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  alias: {
+ 
+        'cms': resolve(__dirname, './cms')
+      
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-netlifycms',
