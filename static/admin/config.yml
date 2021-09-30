@@ -1,12 +1,14 @@
+local_backend: true
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+  branch: local-working # Branch to update (optional; defaults to master)
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
+  - name: 'blog2'
     label: 'Blog'
     folder: 'content/blog'
     format: 'frontmatter'
