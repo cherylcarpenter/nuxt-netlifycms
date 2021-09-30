@@ -1,13 +1,10 @@
 import { resolve } from 'path'
 
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   alias: {
- 
-        'cms': resolve(__dirname, './cms')
-      
+      'cms': resolve(__dirname, './cms')
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,5 +51,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  router: {
+    extendRoutes(routes) {
+      routes.push({
+        name: 'custom',
+        path: '/',
+        component: resolve(__dirname, 'pages/home/Index.vue')
+      })
+    }
   }
 }

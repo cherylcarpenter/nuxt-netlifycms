@@ -1,6 +1,7 @@
+import seo from './../partials/seo.js'
 const home = {
     file: 'content/pages/home.md',
-    label: 'Home',
+    label: 'home',
     name: 'Home',
     fields: [
       {
@@ -21,8 +22,10 @@ const home = {
         widget: 'string',
         default: '',
         required: false,
-      }
+      },
+      seo
     ],
+
   }
   
   export default home
