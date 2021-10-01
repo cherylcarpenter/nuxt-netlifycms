@@ -1,0 +1,5 @@
+stories
+stories/*
+stories/*/*.js
+stories/*/*.vue
+static/*
