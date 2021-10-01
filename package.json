@@ -11,8 +11,8 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "storybook": "start-storybook -s ./public,./static -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -s ./static -p 6006",
+    "build-storybook": "yarn tailwind && build-storybook -s ./static",
     "tailwind": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css"
   },
   "dependencies": {
