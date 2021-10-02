@@ -1,22 +1,20 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
-import { addParameters, configure } from '@storybook/vue'
+import { action } from '@storybook/addon-actions'
+import { addParameters } from '@storybook/vue'
 import { themes } from '@storybook/theming'
 import { DocsPage } from '@storybook/addon-docs'
 
-Vue.use(Vuex)
 Vue.config.productionTip = false
 
-Vue.component('nuxt-link', {
+Vue.component('NuxtLink', {
   props: ['to'],
   methods: {
     log() {
       action('link target')(this.to)
     }
   },
-  template: '<a href="#" @click.prevent="log()"><slot>NuxtLink</slot></a>'
+  template: '<div @click="log()"><slot>NuxtLink</slot></div>'
 })
-configure(require.context('../components', true, /\.story\.js$/), module)
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -25,6 +23,23 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/
     }
+  },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'grey',
+        value: '#ccc'
+      },
+      {
+        name: 'dark',
+        value: '#000000'
+      },
+      {
+        name: 'light',
+        value: '#fff'
+      }
+    ]
   }
 }
 

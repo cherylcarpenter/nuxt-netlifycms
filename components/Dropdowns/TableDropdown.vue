@@ -1,10 +1,10 @@
 <template>
   <div>
     <a
+      ref="btnDropdownRef"
       class="text-blueGray-500 py-1 px-3"
       href="#pablo"
-      ref="btnDropdownRef"
-      v-on:click="toggleDropdown($event)"
+      @click="toggleDropdown($event)"
     >
       <i class="fas fa-ellipsis-v"></i>
     </a>
@@ -22,7 +22,7 @@
         shadow-lg
         min-w-48
       "
-      v-bind:class="{
+      :class="{
         hidden: !dropdownPopoverShow,
         block: dropdownPopoverShow
       }"
@@ -88,7 +88,7 @@ export default {
     }
   },
   methods: {
-    toggleDropdown: function (event) {
+    toggleDropdown(event) {
       event.preventDefault()
       if (this.dropdownPopoverShow) {
         this.dropdownPopoverShow = false

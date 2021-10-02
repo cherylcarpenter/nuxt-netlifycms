@@ -4,14 +4,14 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   // mode: 'jit',
   purge: {
-    enabled: false,
+    enabled: true,
     content: [
-      // './**/*.html',
-      // './*.html',
-      // './**/*.js',
-      // './*.js',
-      // './**/*.vue',
-      // './*.vue'
+      './**/*.html',
+      './*.html',
+      './**/*.js',
+      './*.js',
+      './**/*.vue',
+      './*.vue'
     ],
     options: {
       safelist: []
