@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "backend": "npx netlify-cms-proxy-server",
+    "clean": "rm -fr ./node_modules/.cache",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -17,7 +18,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@popperjs/core": "2.9.1",
     "@tailwindcss/forms": "^0.3.4",
+    "babel-preset-vue": "^2.0.2",
     "backend": "npx netlify-cms-proxy-server",
     "chart.js": "^3.5.1",
     "core-js": "^3.15.1",
@@ -47,6 +51,7 @@
     "eslint-plugin-vue": "^7.12.1",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
+    "storybook-addon-deps": "^2.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",

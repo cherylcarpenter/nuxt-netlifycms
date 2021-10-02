@@ -1,6 +1,6 @@
-import CardBarChart from './../../components/Cards/CardBarChart.vue'
+import CardBarChart from '@/components/Cards/CardBarChart.vue'
 export default {
-  title: 'Kit/CardBarChart',
+  title: 'Kit/Cards/CardBarChart',
   component: CardBarChart
 }
 

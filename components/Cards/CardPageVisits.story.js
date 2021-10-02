@@ -1,7 +1,7 @@
-import CardPageVisits from './../../components/Cards/CardPageVisits.vue'
+import CardPageVisits from '@/components/Cards/CardPageVisits.vue'
 
 export default {
-  title: 'Kit/CardPageVisits',
+  title: 'Kit/Cards/CardPageVisits',
   component: CardPageVisits
 }
 

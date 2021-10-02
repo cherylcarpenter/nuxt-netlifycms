@@ -104,7 +104,7 @@ export default {
                   display: false,
                   borderDash: [2],
                   borderDashOffset: [2],
-                  color: 'rgba(33, 37, 41, 0.3)',
+                  color: 'white',
                   zeroLineColor: 'rgba(0, 0, 0, 0)',
                   zeroLineBorderDash: [2],
                   zeroLineBorderDashOffset: [2]
@@ -114,7 +114,7 @@ export default {
             yAxes: [
               {
                 ticks: {
-                  fontColor: 'rgba(255,255,255,.7)'
+                  fontColor: 'rgba(255,255,255,1)'
                 },
                 display: true,
                 scaleLabel: {
@@ -126,7 +126,7 @@ export default {
                   borderDash: [3],
                   borderDashOffset: [3],
                   drawBorder: false,
-                  color: 'rgba(255, 255, 255, 0.15)',
+                  color: 'rgba(255, 255, 255, 1)',
                   zeroLineColor: 'rgba(33, 37, 41, 0)',
                   zeroLineBorderDash: [2],
                   zeroLineBorderDashOffset: [2]
