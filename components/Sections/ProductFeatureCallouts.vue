@@ -66,24 +66,11 @@
             <div class="w-full md:w-6/12 px-4">
               <div class="relative flex flex-col mt-4">
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="
-                      text-blueGray-500
-                      p-3
-                      text-center
-                      inline-flex
-                      items-center
-                      justify-center
-                      w-12
-                      h-12
-                      mb-5
-                      shadow-lg
-                      rounded-full
-                      bg-white
-                    "
-                  >
-                    <i class="fas fa-sitemap"></i>
-                  </div>
+                  <icon-circle
+                    icon-class="fas fa-sitemap"
+                    bg-color="bg-white"
+                    color="text-blueGray-500"
+                  />
                   <h6 class="text-xl mb-1 font-semibold">CSS Components</h6>
                   <p class="mb-4 text-blueGray-500">
                     Vue Notus comes with a huge number of Fully Coded CSS
@@ -93,24 +80,11 @@
               </div>
               <div class="relative flex flex-col min-w-0">
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="
-                      text-blueGray-500
-                      p-3
-                      text-center
-                      inline-flex
-                      items-center
-                      justify-center
-                      w-12
-                      h-12
-                      mb-5
-                      shadow-lg
-                      rounded-full
-                      bg-white
-                    "
-                  >
-                    <i class="fas fa-drafting-compass"></i>
-                  </div>
+                  <icon-circle
+                    icon-class="fas fa-drafting-compass"
+                    bg-color="bg-white"
+                    color="text-blueGray-500"
+                  />
                   <h6 class="text-xl mb-1 font-semibold">
                     JavaScript Components
                   </h6>
@@ -124,24 +98,11 @@
             <div class="w-full md:w-6/12 px-4">
               <div class="relative flex flex-col min-w-0 mt-4">
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="
-                      text-blueGray-500
-                      p-3
-                      text-center
-                      inline-flex
-                      items-center
-                      justify-center
-                      w-12
-                      h-12
-                      mb-5
-                      shadow-lg
-                      rounded-full
-                      bg-white
-                    "
-                  >
-                    <i class="fas fa-newspaper"></i>
-                  </div>
+                  <icon-circle
+                    icon-class="fas fa-newspaper"
+                    bg-color="bg-white"
+                    color="text-blueGray-500"
+                  />
                   <h6 class="text-xl mb-1 font-semibold">Pages</h6>
                   <p class="mb-4 text-blueGray-500">
                     This extension also comes with 3 sample pages. They are
@@ -151,24 +112,11 @@
               </div>
               <div class="relative flex flex-col min-w-0">
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="
-                      text-blueGray-500
-                      p-3
-                      text-center
-                      inline-flex
-                      items-center
-                      justify-center
-                      w-12
-                      h-12
-                      mb-5
-                      shadow-lg
-                      rounded-full
-                      bg-white
-                    "
-                  >
-                    <i class="fas fa-file-alt"></i>
-                  </div>
+                  <icon-circle
+                    icon-class="fas fa-file-alt"
+                    bg-color="bg-white"
+                    color="text-blueGray-500"
+                  />
                   <h6 class="text-xl mb-1 font-semibold">Documentation</h6>
                   <p class="mb-4 text-blueGray-500">
                     Built by developers for developers. You will love how easy
@@ -185,7 +133,8 @@
 </template>
 
 <script>
-export default {}
+import IconCircle from '../Icons/IconCircle.vue'
+export default {
+  components: { IconCircle }
+}
 </script>
-
-<style></style>

@@ -1,3 +1,4 @@
+// @ts-nocheck
 const _ = require('lodash')
 
 const resolveConfig = require('tailwindcss/resolveConfig')

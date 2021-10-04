@@ -14,8 +14,8 @@
     "lint": "yarn lint:js && yarn lint:style",
     "storybook": "start-storybook -s ./static -p 6006",
     "build-storybook": "yarn tailwind && build-storybook -s ./static",
-    "tailwind": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css",
-    "tailwind:watch": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css --watch",
+    "tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css",
+    "tailwind:watch": "npx tailwindcss -i ./assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css --watch",
     "style-dictionary:build": "yarn style-dictionary build --config ./styleDictionary.config.js"
   },
   "dependencies": {

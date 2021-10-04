@@ -1,3 +1,4 @@
+// @ts-nocheck
 const _ = require('lodash')
 const StyleDictionary = require('style-dictionary')
 const getTokens = require('./styleDictionary/getTailwindTokens')

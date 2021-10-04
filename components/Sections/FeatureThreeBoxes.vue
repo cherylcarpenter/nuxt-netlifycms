@@ -17,24 +17,7 @@
             "
           >
             <div class="px-4 py-5 flex-auto">
-              <div
-                class="
-                  text-white
-                  p-3
-                  text-center
-                  inline-flex
-                  items-center
-                  justify-center
-                  w-12
-                  h-12
-                  mb-5
-                  shadow-lg
-                  rounded-full
-                  bg-red-400
-                "
-              >
-                <i class="fas fa-award"></i>
-              </div>
+              <icon-circle icon-class="fas fa-award" />
               <h6 class="text-xl font-semibold">Awarded Agency</h6>
               <p class="mt-2 mb-4 text-blueGray-500">
                 Divide details about your product or agency work into parts. A
@@ -59,24 +42,11 @@
             "
           >
             <div class="px-4 py-5 flex-auto">
-              <div
-                class="
-                  text-white
-                  p-3
-                  text-center
-                  inline-flex
-                  items-center
-                  justify-center
-                  w-12
-                  h-12
-                  mb-5
-                  shadow-lg
-                  rounded-full
-                  bg-lightBlue-400
-                "
-              >
-                <i class="fas fa-retweet"></i>
-              </div>
+              <icon-circle
+                bg-color="bg-lightBlue-400"
+                icon-class="fas fa-retweet"
+              />
+
               <h6 class="text-xl font-semibold">Free Revisions</h6>
               <p class="mt-2 mb-4 text-blueGray-500">
                 Keep you user engaged by providing meaningful information.
@@ -101,24 +71,10 @@
             "
           >
             <div class="px-4 py-5 flex-auto">
-              <div
-                class="
-                  text-white
-                  p-3
-                  text-center
-                  inline-flex
-                  items-center
-                  justify-center
-                  w-12
-                  h-12
-                  mb-5
-                  shadow-lg
-                  rounded-full
-                  bg-emerald-400
-                "
-              >
-                <i class="fas fa-fingerprint"></i>
-              </div>
+              <icon-circle
+                bg-color="bg-emerald-400"
+                icon-class="fas fa-fingerprint"
+              />
               <h6 class="text-xl font-semibold">Verified Company</h6>
               <p class="mt-2 mb-4 text-blueGray-500">
                 Write a few lines about each one. A paragraph describing a
@@ -133,7 +89,8 @@
 </template>
 
 <script>
-export default {}
+import IconCircle from '../Icons/IconCircle.vue'
+export default {
+  components: { IconCircle }
+}
 </script>
-
-<style></style>

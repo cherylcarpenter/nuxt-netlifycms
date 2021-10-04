@@ -29,27 +29,7 @@
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
               target="_blank"
-              class="
-                get-started
-                text-white
-                font-bold
-                px-6
-                py-4
-                rounded
-                outline-none
-                focus:outline-none
-                mr-1
-                mb-2
-                bg-emerald-500
-                active:bg-emerald-600
-                uppercase
-                text-sm
-                shadow
-                hover:shadow-lg
-                ease-linear
-                transition-all
-                duration-150
-              "
+              class="btn btn-emerald mr-1 mb-2"
             >
               Get started
             </a>
@@ -93,5 +73,3 @@
 <script>
 export default {}
 </script>
-
-<style></style>

@@ -3,24 +3,12 @@
     <div class="container mx-auto overflow-hidden pb-20">
       <div class="flex flex-wrap items-center">
         <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
-          <div
-            class="
-              text-blueGray-500
-              p-3
-              text-center
-              inline-flex
-              items-center
-              justify-center
-              w-16
-              h-16
-              mb-6
-              shadow-lg
-              rounded-full
-              bg-white
-            "
-          >
-            <i class="fas fa-sitemap text-xl"></i>
-          </div>
+          <icon-circle
+            icon-class="fas fa-sitemap"
+            bg-color="bg-white"
+            color="text-blueGray-500"
+            size-classes="large"
+          />
           <h3 class="text-3xl mb-2 font-semibold leading-normal">
             CSS Components
           </h3>
@@ -305,6 +293,7 @@
 </template>
 
 <script>
+import IconCircle from '../Icons/IconCircle.vue'
 import componentBtn from '@/assets/img/component-btn.png'
 import componentProfileCard from '@/assets/img/component-profile-card.png'
 import componentInfoCard from '@/assets/img/component-info-card.png'
@@ -313,6 +302,7 @@ import componentMenu from '@/assets/img/component-menu.png'
 import componentBtnPink from '@/assets/img/component-btn-pink.png'
 
 export default {
+  components: { IconCircle },
   data() {
     return {
       componentBtn,
@@ -325,5 +315,3 @@ export default {
   }
 }
 </script>
-
-<style></style>

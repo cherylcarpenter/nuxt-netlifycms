@@ -1,3 +1,4 @@
+// @ts-nocheck
 const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
@@ -138,6 +139,13 @@ module.exports = {
           }
         }
       ])
+    }),
+    plugin(function ({ addVariant, e }) {
+      addVariant('active', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.${e(`active${separator}${className}`)}:active`
+        })
+      })
     })
   ]
 }

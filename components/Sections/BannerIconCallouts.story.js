@@ -11,6 +11,6 @@ const Template = (_args, { argTypes }) => ({
   template: '<BannerIconCallouts />'
 })
 export const Default = Template.bind({})
-// Default.parameters = {
-//   backgrounds: { default: 'grey' }
-// }
+Default.parameters = {
+  backgrounds: { default: 'baby-blue' }
+}
