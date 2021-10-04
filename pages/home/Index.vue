@@ -10,10 +10,10 @@ export default {
     const home = await $content('pages/home').fetch()
 
     return {
-      home,
+      home
     }
   },
-  head(){
+  head() {
     return {
       title: this.home.seo.title,
       meta: [
