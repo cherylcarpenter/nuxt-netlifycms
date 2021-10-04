@@ -15,7 +15,7 @@ module.exports = {
       // './*.vue'
     ],
     options: {
-      safelist: []
+      safelist: ['active:bg-emerald-600']
     }
   },
   theme: {

@@ -26,15 +26,11 @@
             web app or give an old project a new look!
           </p>
           <div class="sm:block flex flex-col mt-10">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
-              target="_blank"
-              class="btn btn-emerald mr-1 mb-2"
-            >
+            <a href="#" target="_blank" class="btn btn-emerald mr-1 mb-2">
               Get started
             </a>
             <a
-              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
+              href="#"
               target="_blank"
               class="
                 github-star

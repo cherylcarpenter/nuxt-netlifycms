@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { join, resolve } from 'path'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -41,31 +41,29 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
+    // '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
+    '@nuxtjs/stylelint-module'
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    // '@nuxtjs/tailwindcss'
   ],
-  tailwindcss: {
-    exposeConfig: true
-  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extractCSS: true,
+    extractCSS: false,
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
       plugins: {
+        // tailwindcss: join(__dirname, './tailwind.config.js'),
         // Disable a plugin by passing false as value
-        'postcss-url': false,
+        'postcss-import': {},
+        'postcss-url': {},
         'postcss-nested': {},
         'postcss-responsive-type': {},
-        'postcss-hexrgba': {},
-        'postcss-import': {}
+        'postcss-hexrgba': {}
       },
       preset: {
         // Change the postcss-preset-env settings
