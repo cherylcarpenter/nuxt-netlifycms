@@ -1,4 +1,4 @@
-import { join, resolve } from 'path'
+import { resolve } from 'path'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -29,8 +29,8 @@ export default {
       }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
+  css: ['~/static/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -40,39 +40,23 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    // '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module'
-    // https://go.nuxtjs.dev/tailwindcss
-    // '@nuxtjs/tailwindcss'
   ],
+
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content'],
+  modules: [
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content'
+  ],
+
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    extractCSS: false,
-    postcss: {
-      // Add plugin names as key and arguments as value
-      // Install them before as dependencies with npm or yarn
-      plugins: {
-        // tailwindcss: join(__dirname, './tailwind.config.js'),
-        // Disable a plugin by passing false as value
-        'postcss-import': {},
-        'postcss-url': {},
-        'postcss-nested': {},
-        'postcss-responsive-type': {},
-        'postcss-hexrgba': {}
-      },
-      preset: {
-        // Change the postcss-preset-env settings
-        autoprefixer: {
-          grid: true
-        }
-      }
-    }
-  },
+  build: {},
   router: {
     extendRoutes(routes) {
       routes.push({
