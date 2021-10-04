@@ -14,7 +14,9 @@
     "lint": "yarn lint:js && yarn lint:style",
     "storybook": "start-storybook -s ./static -p 6006",
     "build-storybook": "yarn tailwind && build-storybook -s ./static",
-    "tailwind": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css"
+    "tailwind": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css",
+    "tailwind:watch": "npx tailwindcss -i ./static/assets/css/tailwind.css -c ./tailwind.config.js -o ./static/assets/css/main.css --watch",
+    "style-dictionary:build": "yarn style-dictionary build --config ./styleDictionary.config.js"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -49,11 +51,14 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
+    "lodash": "^4.17.21",
+    "netlify-cli": "^6.9.28",
     "postcss": "^8.3.5",
     "postcss-hexrgba": "^2.0.1",
     "postcss-responsive-type": "^1.0.0",
     "prettier": "^2.3.2",
     "storybook-addon-deps": "^2.2.0",
+    "style-dictionary": "^3.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",

@@ -91,3 +91,8 @@ sw.*
 
 # Storybook Static build
 storybook-static
+
+#apikeys
+config.js
+# Local Netlify folder
+.netlify

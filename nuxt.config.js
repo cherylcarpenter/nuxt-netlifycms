@@ -23,6 +23,9 @@ export default {
     script: [
       {
         src: 'https://kit.fontawesome.com/4400228d2f.js'
+      },
+      {
+        src: 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY'
       }
     ]
   },
