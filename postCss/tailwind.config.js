@@ -5,14 +5,14 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   // mode: 'jit',
   purge: {
-    enabled: false,
+    enabled: process.env.NODE_ENV === 'production',
     content: [
-      // './**/*.html',
-      // './*.html',
-      // './**/*.js',
-      // './*.js',
-      // './**/*.vue',
-      // './*.vue'
+      './../**/*.html',
+      './../*.html',
+      './../**/*.js',
+      './../*.js',
+      './../**/*.vue',
+      './../*.vue'
     ],
     options: {
       safelist: ['active:bg-emerald-600']

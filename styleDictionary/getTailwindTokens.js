@@ -1,8 +1,8 @@
 // @ts-nocheck
 const _ = require('lodash')
 
-const resolveConfig = require('tailwindcss/resolveConfig')
-const tailwindConfig = require('./../tailwind.config')
+const resolveConfig = require('./../postCss/node_modules/tailwindcss/resolveConfig')
+const tailwindConfig = require('./../postCss/tailwind.config')
 
 const { theme } = resolveConfig(tailwindConfig)
 

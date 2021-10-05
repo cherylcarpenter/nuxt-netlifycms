@@ -2,7 +2,10 @@ import BannerCard from '@/components/Sections/BannerCard.vue'
 
 export default {
   title: 'Kit/Sections/BannerCard',
-  component: BannerCard
+  component: BannerCard,
+  actions: {
+    handles: ['mouseover', 'click .btn', 'click a']
+  }
 }
 
 const Template = (_args, { argTypes }) => ({
