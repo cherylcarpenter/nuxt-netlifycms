@@ -11,11 +11,14 @@ Now I'm adding prebuilt components from a wonderful free theme by
 [Creative Tim](https://www.creative-tim.com/)  
 [Vue Notus](https://www.creative-tim.com/product/vue-notus)
 
+I have removed postCss and tailwind from the Nuxt version and am running these from a subdirectory. The reason being, @nuxt/tailwind was using an older version of PostCss and would not allow me all the configurations I wanted. I also plan to upgrade nuxt/Vue as soon as the new version is out and this will allow easy upgrade.
+
 I'm going to deploy both the CMS version and the storybook version with Netlify
 
 TODO
 
 <ul>
+<li>Wire in browser-syc, for a better tailwind watch</li>
 <li>Wire the stories with fake data /or CMS data, undecided</li>
 <li>Create data structure in Netlify CMS</li>
 <li>Create pages with new or existing components</li>

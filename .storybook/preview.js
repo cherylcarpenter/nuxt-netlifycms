@@ -32,6 +32,10 @@ export const parameters = {
         value: '#ccc'
       },
       {
+        name: 'baby-blue',
+        value: 'rgba(241, 245, 249, 1)'
+      },
+      {
         name: 'dark',
         value: '#000000'
       },

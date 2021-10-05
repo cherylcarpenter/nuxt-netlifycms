@@ -23,11 +23,18 @@ export default {
     script: [
       {
         src: 'https://kit.fontawesome.com/4400228d2f.js'
+      },
+      {
+        src: 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY'
       }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    process.env.NODE_ENV === 'production'
+      ? '~/static/assets/css/main.min.css'
+      : '~/static/assets/css/main.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -37,38 +44,23 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/stylelint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content'],
+  modules: [
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content'
+  ],
+
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    postcss: {
-      // Add plugin names as key and arguments as value
-      // Install them before as dependencies with npm or yarn
-      plugins: {
-        // Disable a plugin by passing false as value
-        'postcss-url': false,
-        'postcss-nested': {},
-        'postcss-responsive-type': {},
-        'postcss-hexrgba': {},
-        'postcss-import': {}
-      },
-      preset: {
-        // Change the postcss-preset-env settings
-        autoprefixer: {
-          grid: true
-        }
-      }
-    }
-  },
+  build: {},
   router: {
     extendRoutes(routes) {
       routes.push({
