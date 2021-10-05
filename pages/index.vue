@@ -7,11 +7,9 @@
 
 <script>
 import Vue from 'vue'
-type Data = {
-  title: string
-}
+
 export default Vue.extend({
-  data: ():Data => ({
+  data: () => ({
     title: 'My Title'
   })
 })
