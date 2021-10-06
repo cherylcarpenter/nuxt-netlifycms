@@ -33,7 +33,7 @@ const Template = (_args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { IconCircle },
 
-  template: '<IconCircle v-bind="$props"/>'
+  template: '<IconCircle v-bind="$props" :iconClass="iconClass"/>'
 })
 
 export const Default = Template.bind({})

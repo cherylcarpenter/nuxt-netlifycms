@@ -17,10 +17,9 @@ I'm going to deploy both the CMS version and the storybook version with Netlify
 
 TODO
 
-<ul>
-<li>Wire in browser-syc, for a better tailwind watch</li>
-<li>Wire the stories with fake data /or CMS data, undecided</li>
-<li>Create data structure in Netlify CMS</li>
-<li>Create pages with new or existing components</li>
-<li>Customize Tailwind for my own design</li>
-<li>Customize the local dashboard for CMS editing</li>
+- [x] Wire in browser-syc, for a better tailwind watch
+- [ ] Create data structure in Netlify CMS
+- [ ] Create pages with new or existing components
+- [ ] Wire the stories with fake data /or CMS data, undecided
+- [ ] Customize Tailwind for my own design
+- [ ] Customize the local dashboard for CMS editing

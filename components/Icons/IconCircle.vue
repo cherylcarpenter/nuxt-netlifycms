@@ -1,6 +1,6 @@
 <template>
   <div
-    :key="[iconClass, computedIconTextSize]"
+    :key="id"
     :class="[
       'p-3 text-center inline-flex items-center justify-center rounded-full',
       computedSizeClasses,
@@ -17,6 +17,7 @@
 <script>
 export default {
   name: 'IconCircle',
+
   props: {
     bgColor: {
       type: String,
@@ -48,6 +49,11 @@ export default {
     iconTextSize: {
       type: String,
       default: ''
+    }
+  },
+  data() {
+    return {
+      id: 'key'
     }
   },
   computed: {
