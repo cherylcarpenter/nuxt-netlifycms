@@ -15,7 +15,7 @@
         "
       >
         <div class="px-4 py-5 flex-auto">
-          <icon-circle icon-class="fas fa-award" />
+          <icon-circle :icon="icon" />
           <h6 class="text-xl font-semibold">Awarded Agency</h6>
           <p class="mt-2 mb-4 text-blueGray-500">
             Divide details about your product or agency work into parts. A
@@ -31,7 +31,47 @@
 import IconCircle from '../Icons/IconCircle.vue'
 export default {
   name: 'CardIconParagraph',
-  components: { IconCircle }
+  components: { IconCircle },
+
+  props: {
+    iconBgColor: {
+      type: String,
+      default: 'bg-red-400'
+    },
+    iconColor: {
+      type: String,
+      default: 'text-white'
+    },
+    iconShadow: {
+      type: String,
+      default: 'large',
+      validator(value) {
+        return ['xsmall', 'small', 'medium', 'large', 'xlarge'].includes(value)
+      }
+    },
+    iconClass: {
+      type: String,
+      default: 'fas fa-award'
+    },
+    iconSizeClasses: {
+      type: String,
+      default: 'medium',
+      validator(value) {
+        return ['small', 'medium', 'large'].includes(value)
+      }
+    }
+  },
+  data() {
+    return {
+      icon: {
+        BgColor: this.iconBgColor,
+        Color: this.iconColor,
+        Shadow: this.iconShadow,
+        iconClass: this.iconClass,
+        SizeClasses: this.iconSizeClasses
+      }
+    }
+  }
 }
 </script>
 

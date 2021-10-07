@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postcss": "postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=development",
-    "postcss:build": "postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=production"
+    "styles:dev": "yarn postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=development",
+    "styles:build": "yarn postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=production"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",

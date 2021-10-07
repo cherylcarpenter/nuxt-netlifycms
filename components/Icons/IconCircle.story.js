@@ -10,11 +10,11 @@ export default {
   title: 'Kit/Icons/IconCircle',
   component: IconCircle,
   argTypes: {
-    bgColor: {
+    BgColor: {
       control: { type: 'select' },
       options: bgColors.result
     },
-    color: {
+    Color: {
       control: { type: 'select' },
       options: textColors.result
     },
@@ -22,10 +22,15 @@ export default {
       control: { type: 'select' },
       options: FontAwesomeIcons
     },
-    sizeClasses: {
+    SizeClasses: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large']
+    },
+    Shadow: {
+      control: { type: 'select' },
+      options: ['xsmall', 'small', 'medium', 'large', 'xlarge']
     }
+
   }
 }
 
@@ -38,7 +43,11 @@ const Template = (_args, { argTypes }) => ({
 
 export const Default = Template.bind({})
 Default.args = {
-  bgColor: 'bg-red-400',
-  color: 'text-white',
-  iconClass: 'fas fa-award'
+  icon: {
+    BgColor: 'bg-red-400',
+    Color: 'text-white',
+    iconClass: 'fas fa-award',
+    Shadow: 'large',
+    SizeClasses: 'medium'
+  }
 }

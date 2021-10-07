@@ -5,7 +5,7 @@
   "scripts": {
     "backend": "npx netlify-cms-proxy-server",
     "clean": "rm -fr ./node_modules/.cache",
-    "dev": "tailwind:dev && nuxt",
+    "dev": "yarn tailwind:dev && nuxt",
     "build": "yarn tailwind:build && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -16,8 +16,8 @@
     "storybook:noTailwind": "yarn start-storybook -s ./static -p 6006",
     "build-storybook": "yarn tailwind:build && build-storybook -s ./static",
     "style-dictionary:build": "yarn style-dictionary build --config ./styleDictionary.config.js",
-    "tailwind:dev": "yarn --cwd ./postCss postcss",
-    "tailwind:build": "yarn --cwd ./postCss postcss:build",
+    "tailwind:dev": "yarn --cwd ./postCss install && yarn --cwd ./postCss styles:dev",
+    "tailwind:build": "yarn --cwd ./postCss install &&  --cwd ./postCss styles:build",
     "watch:dev": "nodemon -x yarn tailwind:dev --watch",
     "sync": "browser-sync start --proxy 'localhost:6006' --files \"**/*\"",
     "allDev:sb": "run-p storybook:noTailwind sync watch:dev "

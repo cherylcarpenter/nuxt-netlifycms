@@ -2,15 +2,14 @@
   <div
     :key="id"
     :class="[
-      'p-3 text-center inline-flex items-center justify-center rounded-full',
+      'p-3 text-center inline-flex items-center justify-center rounded-full mb-5',
       computedSizeClasses,
-      bgColor,
-      color,
-      marginBottom,
-      shadow
+      icon.BgColor,
+      icon.Color,
+      computedShadowSize
     ]"
   >
-    <i :class="[iconClass, computedIconTextSize]"></i>
+    <i :class="[icon.iconClass, computedIconTextSize]"></i>
   </div>
 </template>
 
@@ -19,36 +18,9 @@ export default {
   name: 'IconCircle',
 
   props: {
-    bgColor: {
-      type: String,
-      default: 'bg-red-400'
-    },
-    color: {
-      type: String,
-      default: 'text-white'
-    },
-    marginBottom: {
-      type: String,
-      default: 'mb-5'
-    },
-    shadow: {
-      type: String,
-      default: 'shadow-lg'
-    },
-    iconClass: {
-      type: String,
-      default: 'fas fa-award'
-    },
-    sizeClasses: {
-      type: String,
-      default: 'medium',
-      validator(value) {
-        return ['small', 'medium', 'large'].includes(value)
-      }
-    },
-    iconTextSize: {
-      type: String,
-      default: ''
+    icon: {
+      type: Object,
+      default() {}
     }
   },
   data() {
@@ -58,15 +30,27 @@ export default {
   },
   computed: {
     computedSizeClasses() {
-      if (this.sizeClasses === 'small') return 'w-10 h-10'
-      if (this.sizeClasses === 'medium') return 'w-12 h-12'
-      if (this.sizeClasses === 'large') return 'w-16 h-16'
+      const sizeClass = this.icon.SizeClasses
+      if (sizeClass === 'small') return 'w-10 h-10'
+      if (sizeClass === 'medium') return 'w-12 h-12'
+      if (sizeClass === 'large') return 'w-16 h-16'
       return ''
     },
     computedIconTextSize() {
-      if (this.sizeClasses === 'small') return ''
-      if (this.sizeClasses === 'medium') return ''
-      if (this.sizeClasses === 'large') return 'text-xl'
+      const sizeClass = this.icon.SizeClasses
+      if (sizeClass === 'small') return ''
+      if (sizeClass === 'medium') return ''
+      if (sizeClass === 'large') return 'text-xl'
+      return ''
+    },
+    computedShadowSize() {
+      const iconShadow = this.icon.Shadow
+
+      if (iconShadow === 'xsmall') return 'shadow-sm'
+      if (iconShadow === 'small') return 'shadow'
+      if (iconShadow === 'medium') return 'shadow-md'
+      if (iconShadow === 'large') return 'shadow-lg'
+      if (iconShadow === 'xlarge') return 'shadow-xl'
       return ''
     }
   }
