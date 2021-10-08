@@ -1,9 +1,12 @@
 import seo from './../partials/seo.js'
-import iconcircle from './../partials/iconcircle'
+import iconcircle from './../partials/iconcircle.js'
+
 const home = {
   file: 'content/pages/home.md',
   label: 'home',
   name: 'Home',
+  format: 'frontmatter',
+
   fields: [
     {
       label: 'Layout',
@@ -25,8 +28,8 @@ const home = {
       required: false
     },
     seo,
-    iconcircle
-  ]
+    iconcircle,
+    ]
 }
   
   export default home

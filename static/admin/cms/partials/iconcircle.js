@@ -1,4 +1,7 @@
-import FontAwesomeIcons from '@/static/data/fontAwesomeClasses.json'
+import FontAwesomeIcons from './faIcons.js'
+
+
+
 
 const iconcircle = {
   label: 'Icon Circle',
@@ -31,7 +34,7 @@ const iconcircle = {
       label: 'Class',
       name: 'Class',
         widget: 'select',
-          options: FontAwesomeIcons,
+        options: FontAwesomeIcons,
     
       required: false
     },

@@ -2,6 +2,8 @@ const blog = {
     file: 'content/pages/blog.md',
     label: 'blog',
     name: 'Blog',
+    format: 'frontmatter',
+
     fields: [
       {
         label: 'Layout',
