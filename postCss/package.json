@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "styles:dev": "yarn postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=development",
-    "styles:build": "yarn postcss ./css/tailwind.css -o ../static/assets/css/main.css --env=production"
+    "styles:build": "yarn postcss ./css/tailwind.css -o ../static/assets/css/main.min.css --env=production"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",

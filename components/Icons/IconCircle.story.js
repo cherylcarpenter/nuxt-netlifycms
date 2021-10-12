@@ -2,21 +2,22 @@ import IconCircle from '@/components/Icons/IconCircle.vue'
 import BgColors from '@/static/data/tokensBg.json'
 import TextColors from '@/static/data/tokensText.json'
 import FontAwesomeIcons from '@/static/data/fontAwesomeClasses.json'
-import { getKeys } from '@/utils/helperUtils'
 
-const bgColors = getKeys(BgColors)
-const textColors = getKeys(TextColors)
+const BgColorsKeys = Object.keys(BgColors)
+const textColorsKeys = Object.keys(TextColors)
 export default {
   title: 'Kit/Icons/IconCircle',
   component: IconCircle,
   argTypes: {
-    BgColor: {
-      control: { type: 'select' },
-      options: bgColors.result
+    bgColor: {
+      options: BgColorsKeys,
+      control: { 
+        type: 'select',
+      },
     },
     Color: {
       control: { type: 'select' },
-      options: textColors.result
+      options: textColorsKeys
     },
     iconClass: {
       control: { type: 'select' },
@@ -29,25 +30,46 @@ export default {
     Shadow: {
       control: { type: 'select' },
       options: ['xsmall', 'small', 'medium', 'large', 'xlarge']
-    }
-
-  }
+    },
+  } 
 }
 
-const Template = (_args, { argTypes }) => ({
-  props: Object.keys(argTypes),
-  components: { IconCircle },
 
-  template: '<IconCircle v-bind="$props" :iconClass="iconClass"/>'
-})
+const Template = (args , { argTypes }) => {
+
+  return{
+    data() {
+      return {
+        newicon: {
+          bgColor: this.bgColor,
+          Color: this.Color,
+          Shadow: this.Shadow,
+          iconClass: this.iconClass,
+          SizeClasses: this.SizeClasses
+        }
+      }
+    },
+    props: Object.keys(argTypes), 
+    components: { IconCircle },
+    template: '<IconCircle :icon="this.newicon"></IconCircle>'
+  }
+
+  
+}
 
 export const Default = Template.bind({})
 Default.args = {
+  bgColor: 'bg-red-400',
+  Color: 'text-white',
+  iconClass: 'fas fa-award',
+  Shadow: 'large',
+  SizeClasses: 'medium',
   icon: {
-    BgColor: 'bg-red-400',
+    bgColor: 'bg-red-400',
     Color: 'text-white',
     iconClass: 'fas fa-award',
     Shadow: 'large',
     SizeClasses: 'medium'
   }
 }
+

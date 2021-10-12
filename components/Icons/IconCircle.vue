@@ -1,10 +1,9 @@
 <template>
   <div
-    :key="id"
     :class="[
       'p-3 text-center inline-flex items-center justify-center rounded-full mb-5',
       computedSizeClasses,
-      icon.BgColor,
+      icon.bgColor,
       icon.Color,
       computedShadowSize
     ]"
@@ -20,12 +19,18 @@ export default {
   props: {
     icon: {
       type: Object,
-      default() {}
+      default:()=> ({
+        bgColor: 'bg-red-400',
+        Color: 'text-white',
+        iconClass: 'fas fa-award',
+        Shadow: 'large',
+        SizeClasses: 'medium'
+      })
     }
   },
   data() {
     return {
-      id: 'key'
+
     }
   },
   computed: {

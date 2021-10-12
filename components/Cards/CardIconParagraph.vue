@@ -16,10 +16,8 @@
       >
         <div class="px-4 py-5 flex-auto">
           <icon-circle :icon="icon" />
-          <h6 class="text-xl font-semibold">Awarded Agency</h6>
-          <p class="mt-2 mb-4 text-blueGray-500">
-            Divide details about your product or agency work into parts. A
-            paragraph describing a feature will be enough.
+          <h6 class="text-xl font-semibold">{{header}}</h6>
+          <p class="mt-2 mb-4 text-blueGray-500">{{body}}
           </p>
         </div>
       </div>
@@ -34,6 +32,14 @@ export default {
   components: { IconCircle },
 
   props: {
+    header:{
+      type: String,
+      default: 'header'
+    },
+    body:{
+    type: String,
+      default: 'body'
+    },
     iconBgColor: {
       type: String,
       default: 'bg-red-400'
@@ -64,7 +70,7 @@ export default {
   data() {
     return {
       icon: {
-        BgColor: this.iconBgColor,
+        bgColor: this.iconBgColor,
         Color: this.iconColor,
         Shadow: this.iconShadow,
         iconClass: this.iconClass,
