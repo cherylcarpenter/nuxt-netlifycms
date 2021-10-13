@@ -9,7 +9,6 @@ module.exports = (ctx) => ({
       features: {
         'nesting-rules': true,
         'focus-within-pseudo-class': false
-
       },
       autoprefixer: false
     },
