@@ -2,7 +2,6 @@ import FontAwesomeIcons from './faIcons.js'
 import bgColors from './bgColors.js'
 import textColors from './textColors.js'
 
-console.log( typeof bgColors[0] )
 const iconcircle = {
   label: 'Icon Circle',
   name: 'iconcircle',

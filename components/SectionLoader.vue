@@ -1,6 +1,7 @@
 <template>
-
-<feature-three-boxes v-if="sectionType==='featureThreeBoxes'"/>
+<!-- start sections loop -->
+<feature-three-boxes v-if="sectionType==='featureThreeBoxes'" :boxes="sectionContent"/>
+<!-- end sections loop -->
 
 </template>
 
@@ -16,6 +17,12 @@ props: {
     sectionType:{
         type: String,
         default: ''
+    },
+    sectionContent: {
+        type: Array,
+        default(){
+            return []
+        }
     }
 }
 

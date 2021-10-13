@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-wrap">
-    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+    <div :class='["lg:pt-12 pt-6 w-full", computedBoxClasses, "px-4 text-center"]'>
       <div
         class="
           relative
@@ -16,13 +15,12 @@
       >
         <div class="px-4 py-5 flex-auto">
           <icon-circle :icon="icon" />
-          <h6 class="text-xl font-semibold">{{header}}</h6>
-          <p class="mt-2 mb-4 text-blueGray-500">{{body}}
+          <h6 class="text-xl font-semibold">{{box.header}}</h6>
+          <p class="mt-2 mb-4 text-blueGray-500">{{box.body}}
           </p>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -32,51 +30,37 @@ export default {
   components: { IconCircle },
 
   props: {
-    header:{
-      type: String,
-      default: 'header'
-    },
-    body:{
-    type: String,
-      default: 'body'
-    },
-    iconBgColor: {
-      type: String,
-      default: 'bg-red-400'
-    },
-    iconColor: {
-      type: String,
-      default: 'text-white'
-    },
-    iconShadow: {
-      type: String,
-      default: 'large',
-      validator(value) {
-        return ['xsmall', 'small', 'medium', 'large', 'xlarge'].includes(value)
+    box: {
+      type: Object,
+      default(){
+        return {}
       }
     },
-    iconClass: {
-      type: String,
-      default: 'fas fa-award'
-    },
-    iconSizeClasses: {
-      type: String,
-      default: 'medium',
-      validator(value) {
-        return ['small', 'medium', 'large'].includes(value)
-      }
+    boxCount: {
+      type: Number,
+      default: null
     }
   },
   data() {
     return {
       icon: {
-        bgColor: this.iconBgColor,
-        Color: this.iconColor,
-        Shadow: this.iconShadow,
-        iconClass: this.iconClass,
-        SizeClasses: this.iconSizeClasses
+        bgColor: this.box.iconcircle.BgColor,
+        Color: this.box.iconcircle.Color,
+        Shadow: this.box.iconcircle.Shadow,
+        iconClass: this.box.iconcircle.Class,
+        SizeClasses: this.box.iconcircle.SizeClasses
       }
     }
-  }
+  },
+
+  computed: {
+          computedBoxClasses() {
+            const boxCount= this.boxCount
+            if(boxCount===2) return 'md:w-2/12'
+                      if(boxCount===3) return 'md:w-3/12'
+            if(boxCount===4) return 'md:w-4/12'
+return ''
+          }
+    }
 }
 </script>

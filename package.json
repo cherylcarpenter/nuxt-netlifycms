@@ -5,7 +5,7 @@
   "scripts": {
     "backend": "npx netlify-cms-proxy-server",
     "clean": "rm -fr ./node_modules/.cache",
-    "dev": "nuxt --max-old-space-size=4096",
+    "dev": "nuxt --max-old-space-size=8192",
     "build": "yarn tailwind:build && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

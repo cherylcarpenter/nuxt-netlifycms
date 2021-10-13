@@ -1,4 +1,4 @@
-import iconcircle from "../iconcircle"
+import iconcircle from "./../iconcircle.js"
 
 const cardIconParagraph = {
     label: 'Card Icon Paragraph',

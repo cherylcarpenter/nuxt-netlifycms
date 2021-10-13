@@ -1,5 +1,5 @@
 module.exports = (ctx) => ({
-  map: ctx.env === 'development' ? { inline: false } : false,
+  map: ctx.env === 'development' ? {} : false,
   parser: false,
   plugins: {
     'postcss-import': { root: ctx.file.dirname },

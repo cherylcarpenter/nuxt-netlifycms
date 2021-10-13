@@ -1,4 +1,5 @@
-import iconCircle from '../iconcircle.js'
+import iconcircle from "./../iconcircle.js"
+import cardIconParagraph from './cardIconParagraph.js'
 
 const featureThreeBoxes = {
     label: 'Feature Three Boxes',
@@ -7,24 +8,17 @@ const featureThreeBoxes = {
     description:'Feature Three Boxes',
     widget: 'list',
     allow_add: true,
-    // types: [cardIconParagraph],
     fields: [
-        iconCircle,
-          {
-            label: 'Header',
-            name: 'header',
-            widget: 'string',
-            required: true,
-          },
-          {
-            label: 'Body',
-            name: 'body',
-            widget: 'string',
-            required: false,
-          },
-        ],
-            max: 4,
-
+        {
+            name: 'boxes', 
+            label: 'Boxes', 
+            widget:'list',
+            types: [cardIconParagraph]
+         
+        }
+    ],
+    max: 5,
+    min: 1
   }
   
   export default featureThreeBoxes
