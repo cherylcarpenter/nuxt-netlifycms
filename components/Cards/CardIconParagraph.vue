@@ -56,10 +56,10 @@ export default {
   computed: {
           computedBoxClasses() {
             const boxCount= this.boxCount
-            if(boxCount===2) return 'md:w-2/12'
-                      if(boxCount===3) return 'md:w-3/12'
-            if(boxCount===4) return 'md:w-4/12'
-return ''
+            if(boxCount===2) return 'md:w-6/12'
+            if(boxCount===3) return 'md:w-4/12'
+            if(boxCount===4) return 'md:w-3/12'
+            return ''
           }
     }
 }

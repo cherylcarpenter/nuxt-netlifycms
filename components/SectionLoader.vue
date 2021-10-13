@@ -1,7 +1,6 @@
 <template>
-<!-- start sections loop -->
+
 <feature-three-boxes v-if="sectionType==='featureThreeBoxes'" :boxes="sectionContent"/>
-<!-- end sections loop -->
 
 </template>
 

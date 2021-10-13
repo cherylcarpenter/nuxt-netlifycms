@@ -1,18 +1,20 @@
 module.exports = (ctx) => ({
-  map: ctx.env === 'development' ? {} : false,
+  // map: ctx.env === 'development' ? {} : false,
   parser: false,
   plugins: {
     'postcss-import': { root: ctx.file.dirname },
     tailwindcss: {},
     'postcss-preset-env': {
-      stage: 2,
+      stage: 1,
       features: {
-        'nesting-rules': true
+        'nesting-rules': true,
+        'focus-within-pseudo-class': false
+
       },
-      autoprefixer: ctx.env === 'development' ? false : {}
+      autoprefixer: false
     },
     'tailwindcss/nesting': {},
-    autoprefixer: false,
-    cssnano: ctx.env === 'production' ? {} : false
+    autoprefixer: ctx.env === 'development' ? false : {},
+    cssnano: ctx.env === 'development' ? false : {}
   }
 })
