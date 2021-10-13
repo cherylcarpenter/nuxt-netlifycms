@@ -31,9 +31,7 @@ export default {
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    process.env.NODE_ENV === 'production'
-      ? '~/static/assets/css/main.min.css'
-      : '~/static/assets/css/main.css'
+    '~/static/assets/css/main.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -62,12 +60,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   router: {
-    extendRoutes(routes) {
-      routes.push({
-        name: 'custom',
-        path: '/',
-        component: resolve(__dirname, 'pages/home/Index.vue')
-      })
-    }
+   
   }
 }

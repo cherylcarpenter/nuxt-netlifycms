@@ -13,7 +13,7 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "storybook": "yarn tailwind:dev && start-storybook -s ./static -p 6006",
-    "storybook:noTailwind": "yarn start-storybook -s ./static -p 6006",
+    "storybook:noTw": "yarn start-storybook -s ./static -p 6006",
     "build-storybook": "yarn tailwind:build && build-storybook -s ./static",
     "style-dictionary:build": "yarn style-dictionary build --config ./styleDictionary.config.js",
     "tailwind:dev": "yarn --cwd ./postCss install && yarn --cwd ./postCss styles:dev",

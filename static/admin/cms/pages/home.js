@@ -1,5 +1,6 @@
 import seo from './../partials/seo.js'
 import iconcircle from './../partials/iconcircle.js'
+import featureThreeBoxes from '../partials/sections/featureThreeBoxes.js'
 
 const home = {
   file: 'content/pages/home.md',
@@ -28,7 +29,14 @@ const home = {
       required: false
     },
     seo,
-    iconcircle,
+    {
+      label: 'Sections',
+      name: 'sections',
+      widget: 'list',
+      types: [featureThreeBoxes],
+      collapsed: false,
+      summary: 'Sections'
+    }
     ]
 }
   

@@ -1,8 +1,8 @@
 import FontAwesomeIcons from './faIcons.js'
+import bgColors from './bgColors.js'
+import textColors from './textColors.js'
 
-
-
-
+console.log( typeof bgColors[0] )
 const iconcircle = {
   label: 'Icon Circle',
   name: 'iconcircle',
@@ -13,21 +13,21 @@ const iconcircle = {
       label: 'BgColor',
       name: 'BgColor',
       widget: 'select',
-      options: [],
+      options: bgColors,
       default: ['bg-red-400']
     },
     {
       label: 'Color',
       name: 'Color',
       widget: 'select',
-      options: [],
+      options: textColors,
       default: ['text-white']
     },
     {
       label: 'Shadow',
       name: 'Shadow',
       widget: 'select',
-      options: ['small', 'medium', 'large'],
+      options: ['xsmall', 'small', 'medium', 'large', 'xlarge'],
       default: ['large']
     },
     {
@@ -41,8 +41,9 @@ const iconcircle = {
     {
       label: 'SizeClasses',
       name: 'SizeClasses',
-      widget: 'string',
-      required: false
+      widget: 'select',
+      options: ['small', 'medium', 'large'],
+      default: ['large']
     }
   ]
 }

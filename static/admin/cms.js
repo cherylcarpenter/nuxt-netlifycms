@@ -9,15 +9,14 @@ const { CMS, initCMS: init } = window
 
 const config = {
   local_backend: true,
-  load_config_file: true,
-  // backend: {
-  //   name: 'git-gateway',
-  //   repo: 'https://github.com/cherylcarpenter/nuxt-netlifycms',
-  //   branch: 'local-working',
-  //   auth_type: 'github',
-  // },
-  // media_folder: '/static/img',
-  // public_folder: '/img',
+  load_config_file: false,
+  backend: {
+    name: 'proxy',
+    repo: 'http://localhost:8081/api/v1',
+    branch: 'local-working',
+  },
+  media_folder: '/static/img',
+  public_folder: '/img',
   collections: [pages],
 };
 
