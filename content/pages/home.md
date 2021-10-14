@@ -19,10 +19,21 @@ sections:
       - type: cardIconParagraph
         iconcircle:
           BgColor: bg-rose-500
-          Color: bg-rose-200
+          Color: text-rose-300
           Shadow: medium
           SizeClasses: medium
           Class: fas fa-address-card
         header: Box Two
-        body: "Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two "
+        body: "Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
+          Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box
+          Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
+          Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box
+          Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
+          Box Two Box Two Box Two Box Two Box Two "
+    sectionSettings:
+      sectionBkgColor: bg-rose-500
+      Has Background: true
+      hasBackground: true
+      paddingTop: pt-16
+      paddingBottom: pb-16
 ---

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ home.title }}</h1>
-      <section-loader v-for="(section, index) in home.sections" :key="`${section}${index}`" :section-type="section.type" :section-content="section.boxes"/>
+      <section-loader v-for="(section, index) in home.sections" :key="`${section}${index}`" :section-type="section.type" :section-content="section"/>
   </div>
 </template>
 
