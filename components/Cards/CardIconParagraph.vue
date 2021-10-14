@@ -1,5 +1,5 @@
 <template>
-    <div :class='["lg:pt-12 pt-6 w-full", computedBoxClasses, "px-4 text-center"]'>
+    <div :class='["cardIconParagraph flex w-full", computedBoxClasses, "px-4 text-center"]'>
       <div
         class="
           relative
@@ -8,17 +8,17 @@
           break-words
           bg-white
           w-full
-          mb-8
           shadow-lg
           rounded-lg
+          px-4
+          py-5
+          items-center 
         "
       >
-        <div class="px-4 py-5 flex-auto">
           <icon-circle :icon="icon" />
           <h6 class="text-xl font-semibold">{{box.header}}</h6>
           <p class="mt-2 mb-4 text-blueGray-500">{{box.body}}
           </p>
-        </div>
       </div>
     </div>
 </template>
@@ -64,3 +64,16 @@ export default {
     }
 }
 </script>
+<style scoped>
+
+@media screen {
+  .cardIconParagraph > div {
+  padding-bottom: 2rem;
+  
+}
+ .cardIconParagraph:last-of-type > div{
+      padding-bottom: 0;
+    }
+}
+
+</style>

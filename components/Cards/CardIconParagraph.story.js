@@ -7,12 +7,12 @@ const textColorsKeys = Object.keys(TextColors)
 export default {
   title: 'Kit/Cards/CardIconParagraph',
   component: CardIconParagraph,
-  argTypes:{ 
+  argTypes: {
     iconBgColor: {
       options: BgColorsKeys,
-      control: { 
-        type: 'select',
-      },
+      control: {
+        type: 'select'
+      }
     },
     iconColor: {
       control: { type: 'select' },
@@ -29,8 +29,8 @@ export default {
     iconShadow: {
       control: { type: 'select' },
       options: ['xsmall', 'small', 'medium', 'large', 'xlarge']
-    },
-  } 
+    }
+  }
 }
 
 const Template = (_args, { argTypes }) => ({
@@ -44,5 +44,5 @@ Default.args = {
   iconColor: 'text-white',
   iconClass: 'fas fa-award',
   iconShadow: 'large',
-  iconSizeClasses: 'medium',
+  iconSizeClasses: 'medium'
 }

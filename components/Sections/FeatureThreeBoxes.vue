@@ -1,7 +1,9 @@
 <template>
-  <section class="featureThreeBoxes container mx-auto px-4">
+  <section :class="['featureThreeBoxes mx-auto px-4', sectionBkg, paddingTopLg, paddingBottomLg, paddingTopSm, paddingBottomSm]">
+    <div class="container">
       <div class="flex flex-wrap">
-        <card-icon-paragraph v-for="box in boxes" :key="box.header" :box="box" :box-count="boxes.length"/>
+        <card-icon-paragraph v-for="box in content.boxes" :key="box.header" :box="box" :box-count="content.boxes.length"/>
+      </div>
       </div>
   </section>
 </template>
@@ -12,12 +14,30 @@ import CardIconParagraph from './../Cards/CardIconParagraph.vue'
 export default {
   components: { CardIconParagraph },
   props:{
-    boxes: {
-      type: Array,
+    content: {
+      type: Object,
       default(){
-        return []
+        return {}
       }
     }
   },
+  computed: {
+    sectionBkg(){
+     if (this.content.sectionSettings.hasBackground) return this.content.sectionSettings.sectionBkgColor
+      return ''
+    },
+    paddingTopLg(){
+      return "lg:"+this.content.sectionSettings.paddingTop
+    },
+    paddingBottomLg(){
+      return "lg:"+this.content.sectionSettings.paddingBottom
+    },
+      paddingTopSm(){
+      return "lg:"+this.content.sectionSettings.paddingTop
+    },
+    paddingBottomSm(){
+      return "lg:"+this.content.sectionSettings.paddingBottom
+    }
+  }
 }
 </script>

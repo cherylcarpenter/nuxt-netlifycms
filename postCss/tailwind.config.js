@@ -22,6 +22,9 @@ module.exports = {
     colors: {
       ...colors
     },
+    container: {
+      center: true
+    },
     extend: {
       minHeight: {
         'screen-75': '75vh'
