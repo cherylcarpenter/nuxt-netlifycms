@@ -1,8 +1,0 @@
-@import 'tailwindcss/utilities';
-
-.btn {
-  @apply text-white font-bold px-6 py-4 rounded outline-none focus:outline-none text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 uppercase;
-}
-.btn-emerald {
-  @apply bg-emerald-500 active:bg-emerald-600;
-}

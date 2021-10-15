@@ -33,10 +33,10 @@ export default {
       return "lg:"+this.content.sectionSettings.paddingBottom
     },
       paddingTopSm(){
-      return "lg:"+this.content.sectionSettings.paddingTop
+      return this.content.sectionSettings.paddingTop
     },
     paddingBottomSm(){
-      return "lg:"+this.content.sectionSettings.paddingBottom
+      return this.content.sectionSettings.paddingBottom
     }
   }
 }

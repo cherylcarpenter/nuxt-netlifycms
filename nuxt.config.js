@@ -76,5 +76,7 @@ export default {
   storybook: {
     stories: ['~/components/**/*.story.js']
   },
-  tailwindcss: {}
+  tailwindcss: {
+    cssPath: '~/assets/scss/tailwind.scss'
+  }
 }

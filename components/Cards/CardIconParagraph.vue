@@ -64,16 +64,15 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
-@media screen {
-  .cardIconParagraph > div {
-  padding-bottom: 2rem;
+// @media screens and (max-width: ${screens.lg}) {
+//   .cardIconParagraph > div {
+//   padding-bottom: 2rem;
   
-}
- .cardIconParagraph:last-of-type > div{
-      padding-bottom: 0;
-    }
-}
-
-</style>
+//   }
+//  .cardIconParagraph:last-of-type > div{
+//       padding-bottom: 0;
+//     }
+// }
+ </style>
