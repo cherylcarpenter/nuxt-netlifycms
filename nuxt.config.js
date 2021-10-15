@@ -1,12 +1,7 @@
-import { resolve } from 'path'
-console.log(process.env.NODE_ENV)
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  alias: {
-    cms: resolve(__dirname, './cms'),
-    '~': resolve(__dirname, './')
-  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Cheryl Carpenter Frontend Developer',
@@ -19,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-    base: '/',
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         src: 'https://kit.fontawesome.com/4400228d2f.js'
@@ -29,12 +24,9 @@ export default {
       }
     ]
   },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    process.env.NODE_ENV === 'production'
-      ? '~/static/assets/css/main.min.css'
-      : '~/static/assets/css/main.css'
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -47,7 +39,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,7 +54,27 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-  router: {
-  }
+  build: {
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        'postcss-url': false,
+        'postcss-nested': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {}
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {
+          grid: true
+        }
+      }
+    }
+  },
+  storybook: {
+    stories: ['~/components/**/*.story.js']
+  },
+  tailwindcss: {}
 }
