@@ -3,35 +3,30 @@
     "name": "blog",
     "path": "/blog",
     "component": "/Users/cherylcarpenter/Documents/GitHub/nuxt-netlifycms/pages/blog/index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_9514bc24"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "home",
     "path": "/home",
     "component": "/Users/cherylcarpenter/Documents/GitHub/nuxt-netlifycms/pages/home.vue",
-    "chunkName": "pages/home",
-    "_name": "_7a44a668"
+    "chunkName": "pages/home"
   },
   {
     "name": "about-Index",
     "path": "/about/Index",
     "component": "/Users/cherylcarpenter/Documents/GitHub/nuxt-netlifycms/pages/about/Index.vue",
-    "chunkName": "pages/about/Index",
-    "_name": "_50f866b7"
+    "chunkName": "pages/about/Index"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "/Users/cherylcarpenter/Documents/GitHub/nuxt-netlifycms/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_9881feb4"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/cherylcarpenter/Documents/GitHub/nuxt-netlifycms/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_228d6a19"
+    "chunkName": "pages/index"
   }
 ]
