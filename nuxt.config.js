@@ -63,7 +63,9 @@ export default {
         'postcss-url': false,
         'postcss-nested': {},
         'postcss-responsive-type': {},
-        'postcss-hexrgba': {}
+        'postcss-hexrgba': {},
+        'postcss-at-rules-variables': {},
+        'postcss-each': {}
       },
       preset: {
         // Change the postcss-preset-env settings

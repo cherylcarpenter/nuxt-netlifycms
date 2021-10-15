@@ -13125,6 +13125,11 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
+postcss-at-rules-variables@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/postcss-at-rules-variables/-/postcss-at-rules-variables-0.3.0.tgz#b51bb34c4a0b926204b60be2b43b44e74457706c"
+  integrity sha512-TmzLAG17XTsRYSqcpk96zXie+oU30Tn0F5f8mgSD3JagIAmhWUH7/3CLxY8XL8BhqiIjGiCSMuolIxwB4TE4NA==
+
 postcss-attribute-case-insensitive@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-4.0.2.tgz#d93e46b504589e94ac7277b0463226c68041a880"
@@ -13276,6 +13281,13 @@ postcss-double-position-gradients@^1.0.0:
   dependencies:
     postcss "^7.0.5"
     postcss-values-parser "^2.0.0"
+
+postcss-each@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-each/-/postcss-each-1.1.0.tgz#8bb074d130d41eb21679d11aa87204726f5cad88"
+  integrity sha512-YfTPHHAPFVRgEJfLg9RM4R9WYEHVU9Rf1R8QgZfnObwV2dgNqzTLzTl0w5tF71ApFcYLiJAXiTpHAoqJFYcZVw==
+  dependencies:
+    postcss-simple-vars "^6.0.0"
 
 postcss-env-function@^2.0.2:
   version "2.0.2"
@@ -13864,6 +13876,11 @@ postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2, postcss-selector
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
+
+postcss-simple-vars@^6.0.0:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-6.0.3.tgz#e66516c7fe980da3498f4a8ad400b9c53861806c"
+  integrity sha512-fkNn4Zio8vN4vIig9IFdb8lVlxWnYR769RgvxCM6YWlFKie/nQaOcaMMMFz/s4gsfHW4/5bJW+i57zD67mQU7g==
 
 postcss-svgo@^4.0.3:
   version "4.0.3"

@@ -44,8 +44,31 @@ function getTailwindTokens() {
           )
         })
         break
-
       default:
+        // _.forEach(value, function (value, secondLevelKey) {
+        //   if (secondLevelKey[0] === '-') {
+        //     addToTokensObject([`-${key}`, secondLevelKey.slice(1)], value)
+        //   }
+        //   if (!_.isObject(value)) {
+        //     // For non-objects (simple key/value pairs) we can
+        //     // add them straight into our tokens object.
+        //     addToTokensObject([key, secondLevelKey], value)
+        //   } else {
+        //     // Skip 'raw' CSS media queries.
+        //     if (!_.isUndefined(value.raw)) {
+        //       return
+        //     }
+
+        //     // For objects (like color shades) we need to do a
+        //     // final forOwn loop to make sure we add everything
+        //     // in the right format.
+        //     _.forEach(value, function (value, thirdLevelKey) {
+        //       console.log('thirdLevelKey', thirdLevelKey)
+
+        //       addToTokensObject([key, secondLevelKey, thirdLevelKey], value)
+        //     })
+        //   }
+
         _.forEach(value, function (value, secondLevelKey) {
           if (!_.isObject(value)) {
             // For non-objects (simple key/value pairs) we can

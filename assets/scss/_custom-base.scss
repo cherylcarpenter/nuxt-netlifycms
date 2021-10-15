@@ -1,0 +1,9 @@
+/* The Base
+The base is the first Tailwind CSS layer. It basically holds Preflight, which is the CSS in charge to reset the styles of the browser to something sane and constant between browser engines. Basically, what you see is what you will get on all devices.
+This is a good place to modify a base style, like changing how images behave by default — which with Tailwind CSS these are considered blocks — or if paragraphs should have a bottom margin */
+
+/* Note that here is very useful to add or modify anything want to make something more special than the default browser handling, but without going into full styling, since these styles must be overridable. */
+
+body {
+ // background-color: theme('colors.black');
+}

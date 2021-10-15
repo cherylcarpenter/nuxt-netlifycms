@@ -1,11 +1,24 @@
-import colors from 'tailwindcss/colors'
-import plugin from 'tailwindcss/plugin'
-// const colors = require('tailwindcss/colors')
+// import colors from 'tailwindcss/colors'
+// import plugin from 'tailwindcss/plugin'
+
+const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
-  // mode: 'jit',
+  //mode: 'jit',
   purge: {
     enabled: false,
-    content: [],
+    content: [
+      // // default
+      // `components/**/*.{vue,js}`,
+      // `layouts/**/*.vue`,
+      // `pages/**/*.vue`,
+      // `plugins/**/*.{js,ts}`,
+      // `nuxt.config.{js,ts}`,
+      // // custom
+      // 'components/**/*.scss',
+      // 'assets/**/*.scss'
+    ],
     options: {
       whitelist: []
     }

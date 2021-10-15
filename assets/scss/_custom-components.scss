@@ -1,0 +1,13 @@
+/* The components
+This is tiny layer that only includes the container class, which is in charge of modifying its width depending on the browser size. You usually see it being used to center content:
+
+In this layer you should add your own extracted components. For example, you could add a class called btn that would transform a link or a button into something that feels more like an actual pressable button. */
+
+/* @import './cardIconParagraph.scss'; */
+
+.cardIconParagraph > div {
+  @apply pb-6;
+}
+.cardIconParagraph:last-of-type > div {
+  @apply pb-0;
+}

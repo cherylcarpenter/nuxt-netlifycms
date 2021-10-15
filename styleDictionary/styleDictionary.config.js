@@ -1,13 +1,15 @@
 // @ts-nocheck
 const _ = require('lodash')
 const StyleDictionary = require('style-dictionary')
-const getTokens = require('./styleDictionary/getTailwindTokens')
+const getTokens = require('./getTailwindTokens.js')
 
 const justBgColors = (token) => ['colors'].includes(token.attributes.category)
 const justTextColors = (token) =>
   ['textColor'].includes(token.attributes.category)
+
 const tokens = getTokens.getTailwindTokens()
 const buildPath = './static/data/'
+const scssPath = '/assets/scss/'
 
 function titleCase(string) {
   return string[0].toUpperCase() + string.slice(1).toLowerCase()
@@ -130,6 +132,32 @@ module.exports = {
           format: 'json/flat',
           destination: 'tokensText.json',
           filter: justTextColors,
+          options: {
+            outputReferences: false
+          }
+        }
+      ]
+    },
+    jsonAll: {
+      transformGroup: 'js',
+      buildPath,
+      files: [
+        {
+          format: 'javascript/module',
+          destination: 'tokensAll.js',
+          options: {
+            outputReferences: true
+          }
+        }
+      ]
+    },
+    scss: {
+      transformGroup: 'scss',
+      scssPath,
+      files: [
+        {
+          format: 'scss/variables',
+          destination: './assets/scss/_variables.scss',
           options: {
             outputReferences: false
           }
