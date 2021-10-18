@@ -8,7 +8,7 @@
           <h2 class="font-semibold text-4xl text-blueGray-600">
             Vue Notus - A beautiful extension for Tailwind CSS.
           </h2>
-          <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+          <p class="mt-4 text-lg leading-relaxed ">
             Vue Notus is Free and Open Source. It does not change any of the CSS
             from
             <a

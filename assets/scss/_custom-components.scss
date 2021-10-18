@@ -5,9 +5,3 @@ In this layer you should add your own extracted components. For example, you cou
 
 /* @import './cardIconParagraph.scss'; */
 
-.cardIconParagraph > div {
-  @apply pb-6;
-}
-.cardIconParagraph:last-of-type > div {
-  @apply pb-0;
-}

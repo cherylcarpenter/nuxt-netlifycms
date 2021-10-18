@@ -195,7 +195,7 @@
         <h6
           class="
             md:min-w-full
-            text-blueGray-500 text-xs
+             text-xs
             uppercase
             font-bold
             block
@@ -220,7 +220,7 @@
                 :class="[
                   isActive
                     ? 'text-emerald-500 hover:text-emerald-600'
-                    : 'text-blueGray-700 hover:text-blueGray-500'
+                    : 'text-blueGray-700 hover:'
                 ]"
                 @click="navigate"
               >
@@ -244,7 +244,7 @@
                 :class="[
                   isActive
                     ? 'text-emerald-500 hover:text-emerald-600'
-                    : 'text-blueGray-700 hover:text-blueGray-500'
+                    : 'text-blueGray-700 hover:'
                 ]"
                 @click="navigate"
               >
@@ -265,7 +265,7 @@
                 :class="[
                   isActive
                     ? 'text-emerald-500 hover:text-emerald-600'
-                    : 'text-blueGray-700 hover:text-blueGray-500'
+                    : 'text-blueGray-700 hover:'
                 ]"
                 @click="navigate"
               >
@@ -286,7 +286,7 @@
                 :class="[
                   isActive
                     ? 'text-emerald-500 hover:text-emerald-600'
-                    : 'text-blueGray-700 hover:text-blueGray-500'
+                    : 'text-blueGray-700 hover:'
                 ]"
                 @click="navigate"
               >
@@ -306,7 +306,7 @@
         <h6
           class="
             md:min-w-full
-            text-blueGray-500 text-xs
+             text-xs
             uppercase
             font-bold
             block
@@ -324,7 +324,7 @@
             <NuxtLink
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-xs
                 uppercase
                 py-3
@@ -342,7 +342,7 @@
             <NuxtLink
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-xs
                 uppercase
                 py-3
@@ -365,7 +365,7 @@
         <h6
           class="
             md:min-w-full
-            text-blueGray-500 text-xs
+             text-xs
             uppercase
             font-bold
             block
@@ -383,7 +383,7 @@
             <NuxtLink
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-xs
                 uppercase
                 py-3
@@ -401,7 +401,7 @@
             <NuxtLink
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-xs
                 uppercase
                 py-3
@@ -422,7 +422,7 @@
         <h6
           class="
             md:min-w-full
-            text-blueGray-500 text-xs
+             text-xs
             uppercase
             font-bold
             block
@@ -441,7 +441,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -462,7 +462,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -481,7 +481,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -500,7 +500,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -519,7 +519,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -538,7 +538,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -557,7 +557,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4
@@ -576,7 +576,7 @@
               target="_blank"
               class="
                 text-blueGray-700
-                hover:text-blueGray-500
+                hover:
                 text-sm
                 block
                 mb-4

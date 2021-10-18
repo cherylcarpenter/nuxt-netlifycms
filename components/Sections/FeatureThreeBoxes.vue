@@ -2,6 +2,7 @@
   <section :class="['featureThreeBoxes mx-auto px-4', sectionBkg, paddingTopLg, paddingBottomLg, paddingTopSm, paddingBottomSm]">
     <div class="container">
       <div class="flex flex-wrap">
+        {{content.boxes}}
         <card-icon-paragraph v-for="box in content.boxes" :key="box.header" :box="box" :box-count="content.boxes.length"/>
       </div>
       </div>
@@ -24,7 +25,7 @@ export default {
   computed: {
     sectionBkg(){
      if (this.content.sectionSettings.hasBackground) return this.content.sectionSettings.sectionBkgColor
-      return ''
+      return 'bg-white'
     },
     paddingTopLg(){
       return "lg:"+this.content.sectionSettings.paddingTop

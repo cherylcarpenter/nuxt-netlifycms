@@ -13,6 +13,8 @@ import fetchMixin from '../mixins/fetch.client'
  */
 window.__NUXT__ = { config: {"_app":{"basePath":"/","assetsPath":"/_nuxt/","cdnURL":null}} };
 ;
+;
+(function(){var l=document.createElement('link');l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap";document.querySelector("head").appendChild(l);})();
 
 /**
  * Important: Import `createApp` after plugin scripts

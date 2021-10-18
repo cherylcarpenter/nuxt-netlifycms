@@ -20,7 +20,7 @@
             <span role="img" aria-label="love">😍</span>
           </p>
           <h3 class="font-semibold text-3xl">Do you love this Starter Kit?</h3>
-          <p class="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
+          <p class=" text-lg leading-relaxed mt-4 mb-4">
             Cause if you do, it can be yours now. Hit the buttons below to
             navigate to get the Free version for your next project. Build a new
             web app or give an old project a new look!

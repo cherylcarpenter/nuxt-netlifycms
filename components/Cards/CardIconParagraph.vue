@@ -3,7 +3,7 @@
     :class="[
       'cardIconParagraph flex w-full',
       computedBoxClasses,
-      'px-4 text-center'
+      'px-4'
     ]"
   >
     <div
@@ -20,10 +20,10 @@
         py-5
         items-center
       "
-    >
+    >{{ box }}
       <icon-circle :icon="icon" />
-      <h6 class="text-xl font-semibold">{{ box.header }}</h6>
-      <p class="mt-2 mb-4 text-blueGray-500">{{ box.body }}</p>
+      <h6 class="text-3xl">{{ box.header }}</h6>
+      <p class="">{{ box.body }}</p>
     </div>
   </div>
 </template>
@@ -49,11 +49,11 @@ export default {
   data() {
     return {
       icon: {
-        bgColor: this.box.iconcircle.BgColor,
-        Color: this.box.iconcircle.Color,
-        Shadow: this.box.iconcircle.Shadow,
-        iconClass: this.box.iconcircle.Class,
-        SizeClasses: this.box.iconcircle.SizeClasses
+        // bgColor: this.box.iconcircle.BgColor,
+        // Color: this.box.iconcircle.Color,
+        // Shadow: this.box.iconcircle.Shadow,
+        // iconClass: this.box.iconcircle.Class,
+        // SizeClasses: this.box.iconcircle.SizeClasses
       }
     }
   },
@@ -69,3 +69,12 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.cardIconParagraph > div {
+  @apply mb-6 md:mb-0;
+}
+.cardIconParagraph:last-of-type > div {
+  @apply mb-0;
+}
+
+</style>

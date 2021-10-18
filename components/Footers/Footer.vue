@@ -127,7 +127,7 @@
                 class="
                   block
                   uppercase
-                  text-blueGray-500 text-sm
+                   text-sm
                   font-semibold
                   mb-2
                 "
@@ -202,7 +202,7 @@
                 class="
                   block
                   uppercase
-                  text-blueGray-500 text-sm
+                   text-sm
                   font-semibold
                   mb-2
                 "
@@ -280,9 +280,9 @@
         class="flex flex-wrap items-center md:justify-between justify-center"
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-blueGray-500 font-semibold py-1">
+          <div class="text-sm  font-semibold py-1">
             Copyright © {{ date }} by
-            <a href="#" class="text-blueGray-500 hover:text-blueGray-800">
+            <a href="#" class=" hover:text-blueGray-800">
               Cheryl Carpenter
             </a>
           </div>

@@ -8,10 +8,10 @@
               size-classes="large"
               icon-class="fas fa-file-alt text-xl"
               bg-color="bg-white"
-              color=" text-blueGray-500"
+              color=" "
             />
             <h3 class="text-3xl font-semibold">Complex Documentation</h3>
-            <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+            <p class="mt-4 text-lg leading-relaxed ">
               This extension comes a lot of fully coded examples that help you
               get started faster. You can adjust the colors and also the
               programming language. You can change the text and images and
@@ -30,7 +30,7 @@
                         px-2
                         uppercase
                         rounded-full
-                        text-blueGray-500
+                        
                         bg-blueGray-50
                         mr-3
                       "
@@ -39,7 +39,7 @@
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-blueGray-500">
+                    <h4 class="">
                       Built by Developers for Developers
                     </h4>
                   </div>
@@ -57,7 +57,7 @@
                         px-2
                         uppercase
                         rounded-full
-                        text-blueGray-500
+                        
                         bg-blueGray-50
                         mr-3
                       "
@@ -66,7 +66,7 @@
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-blueGray-500">
+                    <h4 class="">
                       Carefully crafted code for Components
                     </h4>
                   </div>
@@ -84,7 +84,7 @@
                         px-2
                         uppercase
                         rounded-full
-                        text-blueGray-500
+                        
                         bg-blueGray-50
                         mr-3
                       "
@@ -93,7 +93,7 @@
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-blueGray-500">
+                    <h4 class="">
                       Dynamic Javascript Components
                     </h4>
                   </div>

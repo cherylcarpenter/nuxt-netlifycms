@@ -6,7 +6,7 @@
           <icon-circle
             icon-class="fas fa-sitemap"
             bg-color="bg-white"
-            color="text-blueGray-500"
+            color=""
             size-classes="large"
           />
           <h3 class="text-3xl mb-2 font-semibold leading-normal">
@@ -36,7 +36,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -55,7 +55,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -74,7 +74,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -93,7 +93,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -112,7 +112,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -131,7 +131,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -150,7 +150,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -169,7 +169,7 @@
                 px-2
                 uppercase
                 rounded-full
-                text-blueGray-500
+                
                 bg-white
                 uppercase
                 last:mr-0
@@ -186,7 +186,7 @@
             class="
               font-bold
               text-blueGray-700
-              hover:text-blueGray-500
+              hover:
               ease-linear
               transition-all
               duration-150

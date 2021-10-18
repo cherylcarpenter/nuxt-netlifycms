@@ -5,5 +5,14 @@ This is a good place to modify a base style, like changing how images behave by
 /* Note that here is very useful to add or modify anything want to make something more special than the default browser handling, but without going into full styling, since these styles must be overridable. */
 
 body {
- // background-color: theme('colors.black');
+ color: theme('colors.warmGray.700');
+}
+p {
+    @apply mt-2 mb-4 lg:text-lg;
+    &:last-child{
+        @apply mb-0;
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+    @apply font-serif font-semibold;
 }

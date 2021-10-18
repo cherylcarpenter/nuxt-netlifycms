@@ -69,10 +69,10 @@
                   <icon-circle
                     icon-class="fas fa-sitemap"
                     bg-color="bg-white"
-                    color="text-blueGray-500"
+                    color=""
                   />
                   <h6 class="text-xl mb-1 font-semibold">CSS Components</h6>
-                  <p class="mb-4 text-blueGray-500">
+                  <p class="mb-4 ">
                     Vue Notus comes with a huge number of Fully Coded CSS
                     components.
                   </p>
@@ -83,12 +83,12 @@
                   <icon-circle
                     icon-class="fas fa-drafting-compass"
                     bg-color="bg-white"
-                    color="text-blueGray-500"
+                    color=""
                   />
                   <h6 class="text-xl mb-1 font-semibold">
                     JavaScript Components
                   </h6>
-                  <p class="mb-4 text-blueGray-500">
+                  <p class="mb-4 ">
                     We also feature many dynamic components for React, NextJS,
                     Vue and Angular.
                   </p>
@@ -101,10 +101,10 @@
                   <icon-circle
                     icon-class="fas fa-newspaper"
                     bg-color="bg-white"
-                    color="text-blueGray-500"
+                    color=""
                   />
                   <h6 class="text-xl mb-1 font-semibold">Pages</h6>
-                  <p class="mb-4 text-blueGray-500">
+                  <p class="mb-4 ">
                     This extension also comes with 3 sample pages. They are
                     fully coded so you can start working instantly.
                   </p>
@@ -115,10 +115,10 @@
                   <icon-circle
                     icon-class="fas fa-file-alt"
                     bg-color="bg-white"
-                    color="text-blueGray-500"
+                    color=""
                   />
                   <h6 class="text-xl mb-1 font-semibold">Documentation</h6>
-                  <p class="mb-4 text-blueGray-500">
+                  <p class="mb-4 ">
                     Built by developers for developers. You will love how easy
                     is to to work with Vue Notus.
                   </p>

@@ -44,7 +44,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             >
@@ -65,7 +65,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             >
@@ -86,7 +86,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             >
@@ -107,7 +107,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             >
@@ -128,7 +128,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             >
@@ -149,7 +149,7 @@
               "
               :class="[
                 color === 'light'
-                  ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                  ? 'bg-blueGray-50  border-blueGray-100'
                   : 'bg-emerald-800 text-emerald-300 border-emerald-700'
               ]"
             ></th>

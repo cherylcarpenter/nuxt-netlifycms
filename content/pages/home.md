@@ -32,7 +32,6 @@ sections:
           Box Two Box Two Box Two Box Two Box Two "
     sectionSettings:
       sectionBkgColor: bg-rose-500
-      Has Background: true
       hasBackground: true
       paddingTop: pt-16
       paddingBottom: pb-16

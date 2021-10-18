@@ -2,7 +2,7 @@
   <div>
     <a
       ref="btnDropdownRef"
-      class="text-blueGray-500 block py-1 px-3"
+      class=" block py-1 px-3"
       @click="toggleDropdown($event)"
     >
       <i class="fas fa-bell"></i>

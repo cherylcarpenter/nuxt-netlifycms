@@ -5,22 +5,25 @@ const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  //mode: 'jit',
   purge: {
-    enabled: false,
+    enabled: process.env.NODE_ENV === 'production',
     content: [
-      // // default
-      // `components/**/*.{vue,js}`,
-      // `layouts/**/*.vue`,
-      // `pages/**/*.vue`,
-      // `plugins/**/*.{js,ts}`,
-      // `nuxt.config.{js,ts}`,
-      // // custom
-      // 'components/**/*.scss',
-      // 'assets/**/*.scss'
+      // default
+      `components/**/*.{vue,js}`,
+      `layouts/**/*.vue`,
+      `pages/**/*.vue`,
+      `plugins/**/*.{js,ts}`,
+      `nuxt.config.{js,ts}`,
+      // custom
+      'components/**/*.scss',
+      'assets/**/*.scss'
     ],
     options: {
-      whitelist: []
+      safelist: [
+        /(border|bg|text)-(.*)-(\\d{1}0{1,2})/,
+        /(m.)-(\d)/,
+        /(p.)-(\d)/
+      ]
     }
   },
   darkMode: false, // or 'media' or 'class'
@@ -34,6 +37,13 @@ module.exports = {
     extend: {
       minHeight: {
         'screen-75': '75vh'
+      },
+      fontFamily: {
+        sans: ['Source Sans Pro'],
+        serif: ['Playfair Display'],
+        mono: ['Lato'],
+        display: ['Playfair Display'],
+        body: ['Lato']
       },
       fontSize: {
         55: '55rem'
@@ -87,6 +97,13 @@ module.exports = {
       },
       backgroundSize: {
         full: '100%'
+      },
+      screens: {
+        tablet: '640px',
+
+        laptop: '1024px',
+
+        desktop: '1280px'
       }
     }
   },
@@ -149,5 +166,6 @@ module.exports = {
         }
       ])
     })
-  ]
+  ],
+  experimental: { applyComplexClasses: true, darkModeVariant: true }
 }

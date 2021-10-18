@@ -8,7 +8,7 @@
         <div class="w-full md:w-4/12 px-4">
           <div
             class="
-              text-sm text-blueGray-500
+              text-sm 
               font-semibold
               py-1
               text-center
@@ -19,7 +19,7 @@
             <a
               href="https://www.creative-tim.com?ref=vn-footer-admin"
               class="
-                text-blueGray-500
+                
                 hover:text-blueGray-700
                 text-sm
                 font-semibold

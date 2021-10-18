@@ -3,7 +3,7 @@
     <a
       ref="btnDropdownRef"
       class="
-        hover:text-blueGray-500
+        hover:
         text-blueGray-700
         px-3
         py-2

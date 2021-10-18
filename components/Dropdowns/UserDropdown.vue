@@ -1,10 +1,10 @@
 <template>
   <div>
     <a
-      class="text-blueGray-500 block"
-      href="#pablo"
       ref="btnDropdownRef"
-      v-on:click="toggleDropdown($event)"
+      class=" block"
+      href="#pablo"
+      @click="toggleDropdown($event)"
     >
       <div class="items-center flex">
         <span
@@ -21,7 +21,7 @@
     <div
       ref="popoverDropdownRef"
       class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
-      v-bind:class="{
+      :class="{
         hidden: !dropdownPopoverShow,
         block: dropdownPopoverShow,
       }"
@@ -64,11 +64,11 @@ export default {
   data() {
     return {
       dropdownPopoverShow: false,
-      image: image,
+      image,
     };
   },
   methods: {
-    toggleDropdown: function (event) {
+    toggleDropdown (event) {
       event.preventDefault();
       if (this.dropdownPopoverShow) {
         this.dropdownPopoverShow = false;

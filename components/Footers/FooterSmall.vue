@@ -13,7 +13,7 @@
         <div class="w-full md:w-4/12 px-4">
           <div
             class="
-              text-sm text-blueGray-500
+              text-sm 
               font-semibold
               py-1
               text-center
@@ -110,15 +110,15 @@
 
 <script>
 export default {
-  data() {
-    return {
-      date: new Date().getFullYear()
-    }
-  },
   props: {
     absolute: {
       type: Boolean,
       default: false
+    }
+  },
+  data() {
+    return {
+      date: new Date().getFullYear()
     }
   }
 }

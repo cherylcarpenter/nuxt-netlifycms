@@ -160,7 +160,7 @@
       <div class="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
         <div
           class="
-            text-blueGray-500
+            
             p-3
             text-center
             inline-flex
@@ -201,7 +201,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -220,7 +220,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -239,7 +239,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -258,7 +258,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -277,7 +277,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -296,7 +296,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -315,7 +315,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -334,7 +334,7 @@
               px-2
               uppercase
               rounded-full
-              text-blueGray-500
+              
               bg-white
               uppercase
               last:mr-0
@@ -351,7 +351,7 @@
           class="
             font-bold
             text-blueGray-700
-            hover:text-blueGray-500
+            hover:
             ease-linear
             transition-all
             duration-150

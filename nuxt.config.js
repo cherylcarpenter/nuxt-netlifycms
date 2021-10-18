@@ -1,3 +1,5 @@
+import { join } from 'path'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -27,12 +29,31 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
-
+  googleFonts: {
+    display: 'swap',
+    families: {
+      'Playfair+Display': {
+        wght: [400, 500, 600, 700, 800, 900]
+      },
+      Lato: {
+        wght: [100, 300, 400, 700, 900]
+      },
+      'Source+Sans+Pro': {
+        wght: [200, 300, 400, 600, 700, 900]
+      }
+    }
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    {
+      path: '~/components/',
+      prefix: 'cc',
+      ignore: ['**/*.stories.js']
+    }
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -47,7 +68,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/google-fonts'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -55,10 +77,25 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
       plugins: {
+        tailwindcss: join(__dirname, 'tailwind.config.js'),
+
         // Disable a plugin by passing false as value
         'postcss-url': false,
         'postcss-nested': {},
@@ -75,10 +112,27 @@ export default {
       }
     }
   },
-  storybook: {
-    stories: ['~/components/**/*.story.js']
-  },
+  storybook: {},
   tailwindcss: {
-    cssPath: '~/assets/scss/tailwind.scss'
+    cssPath: '~/assets/scss/tailwind.scss',
+    config: {
+      purge: {
+        enabled: process.env.NODE_ENV === 'production',
+        options: {
+          whitelist: [/(border|bg|text)-(.*)-(\\d{1}0{1,2})/, /^bg/],
+          whitelistPatterns: [/(border|bg|text)-(.*)-(\\d{1}0{1,2})/, /^bg/],
+          safelist: [
+            '/(from|via|to|border|bg|text)-(.*)-(\\d{1}0{1,2})/',
+            'bg-rose-500'
+          ]
+        }
+      }
+    }
+  },
+  publicRuntimeConfig: {
+    // baseURL: 'https://nuxtjs.org'
+  },
+  privateRuntimeConfig: {
+    // apiSecret: process.env.API_SECRET
   }
 }
