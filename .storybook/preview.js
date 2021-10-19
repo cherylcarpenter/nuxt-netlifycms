@@ -17,7 +17,7 @@ Vue.component('NuxtLink', {
   template: '<div @click="log()"><slot>NuxtLink</slot></div>'
 })
 
-export const parameters = {
+addParameters({
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
@@ -45,10 +45,7 @@ export const parameters = {
         value: '#fff'
       }
     ]
-  }
-}
-
-addParameters({
+  },
   docs: {
     page: DocsPage,
     theme: themes.light,

@@ -1,9 +1,8 @@
 <template>
   <div
     :class="[
-      'cardIconParagraph flex w-full',
-      computedBoxClasses,
-      'px-4'
+      'cardIconParagraph flex w-full px-4',
+      computedBoxClasses
     ]"
   >
     <div
@@ -20,7 +19,7 @@
         py-5
         items-center
       "
-    >{{ box }}
+    >
       <icon-circle :icon="icon" />
       <h6 class="text-3xl">{{ box.header }}</h6>
       <p class="">{{ box.body }}</p>
@@ -49,11 +48,11 @@ export default {
   data() {
     return {
       icon: {
-        // bgColor: this.box.iconcircle.BgColor,
-        // Color: this.box.iconcircle.Color,
-        // Shadow: this.box.iconcircle.Shadow,
-        // iconClass: this.box.iconcircle.Class,
-        // SizeClasses: this.box.iconcircle.SizeClasses
+        bgColor: this.box.iconcircle.BgColor,
+        Color: this.box.iconcircle.Color,
+        Shadow: this.box.iconcircle.Shadow,
+        iconClass: this.box.iconcircle.Class,
+        SizeClasses: this.box.iconcircle.SizeClasses
       }
     }
   },
@@ -63,7 +62,7 @@ export default {
       const boxCount = this.boxCount
       if (boxCount === 2) return 'md:w-6/12'
       if (boxCount === 3) return 'md:w-4/12'
-      if (boxCount === 4) return 'md:w-3/12'
+      if (boxCount === 4) return 'md:w-6/12 lg:w-3/12'
       return ''
     }
   }

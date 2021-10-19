@@ -4,6 +4,7 @@ import TextColors from '@/static/data/tokensText.json'
 import FontAwesomeIcons from '@/static/data/fontAwesomeClasses.json'
 const BgColorsKeys = Object.keys(BgColors)
 const textColorsKeys = Object.keys(TextColors)
+
 export default {
   title: 'Kit/Cards/CardIconParagraph',
   component: CardIconParagraph,
@@ -12,37 +13,54 @@ export default {
       options: BgColorsKeys,
       control: {
         type: 'select'
-      }
+      },
+      defaultValue: 'bg-red-400'
     },
     iconColor: {
       control: { type: 'select' },
-      options: textColorsKeys
+      options: textColorsKeys,
+      defaultValue: 'text-white'
     },
     iconClass: {
       control: { type: 'select' },
-      options: FontAwesomeIcons
+      options: FontAwesomeIcons,
+      defaultValue: 'fas fa-award'
     },
     iconSizeClasses: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large']
+      options: ['small', 'medium', 'large'],
+      defaultValue: 'medium'
     },
     iconShadow: {
       control: { type: 'select' },
-      options: ['xsmall', 'small', 'medium', 'large', 'xlarge']
+      options: ['xsmall', 'small', 'medium', 'large', 'xlarge'],
+      defaultValue: 'large'
     }
   }
 }
 
 const Template = (_args, { argTypes }) => ({
+  data() {
+    return {
+      newBox: {
+        iconcircle: {
+          BgColor: this.iconBgColor,
+          Color: this.iconColor,
+          Shadow: this.iconShadow,
+          SizeClasses: this.iconSizeClasses,
+          Class: this.iconClass
+        },
+        header: 'Box One',
+        body: 'Box one Box one Box one Box one Box one Box one Box one Box one Box one'
+      }
+    }
+  },
   props: Object.keys(argTypes),
   components: { CardIconParagraph },
-  template: '<CardIconParagraph v-bind="$props"/>'
+  template: '<CardIconParagraph v-bind="$props" :box="this.newBox"/>'
 })
 export const Default = Template.bind({})
+
 Default.args = {
-  iconBgColor: 'bg-red-400',
-  iconColor: 'text-white',
-  iconClass: 'fas fa-award',
-  iconShadow: 'large',
-  iconSizeClasses: 'medium'
+  boxCount: 3
 }
