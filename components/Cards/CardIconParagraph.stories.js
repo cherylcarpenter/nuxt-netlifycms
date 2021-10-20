@@ -60,7 +60,3 @@ const Template = (_args, { argTypes }) => ({
   template: '<CardIconParagraph v-bind="$props" :box="this.newBox"/>'
 })
 export const Default = Template.bind({})
-
-Default.args = {
-  boxCount: 3
-}

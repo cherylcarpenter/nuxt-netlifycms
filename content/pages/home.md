@@ -15,7 +15,7 @@ sections:
           SizeClasses: medium
           Class: fas fa-address-card
         header: Box One
-        body: "Box one Box one Box one Box one Box one Box one Box one Box one Box one "
+        body: 'Box one Box one Box one Box one Box one Box one Box one Box one Box one '
       - type: cardIconParagraph
         iconcircle:
           BgColor: bg-rose-500
@@ -24,12 +24,28 @@ sections:
           SizeClasses: medium
           Class: fas fa-address-card
         header: Box Two
-        body: "Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
+        body:
+          'Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
           Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box
           Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
           Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box
           Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two Box Two
-          Box Two Box Two Box Two Box Two Box Two "
+          Box Two Box Two Box Two Box Two Box Two '
+      - type: cardIconParagraph
+        iconcircle:
+          BgColor: bg-rose-800
+          Color: text-rose-300
+          Shadow: medium
+          SizeClasses: medium
+          Class: fas fa-address-card
+        header: Box Three
+        body:
+          'Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three
+          Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box
+          Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three
+          Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box
+          Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three Box Three
+          Box Three Box Three Box Three Box Three Box Three '
     sectionSettings:
       sectionBkgColor: bg-rose-500
       hasBackground: true

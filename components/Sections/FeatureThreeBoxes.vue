@@ -1,26 +1,23 @@
 <template>
-
-      <div class="flex flex-wrap">
-        <card-icon-paragraph v-for="box in content.boxes" :key="box.header" :box="box" :box-count="content.boxes.length"/>
-      </div>
-
+  <div class="flex flex-wrap">
+    <card-icon-paragraph
+      v-for="box in content.boxes"
+      :key="box.header"
+      :box="box" />
+  </div>
 </template>
-
 <script>
 import CardIconParagraph from './../Cards/CardIconParagraph.vue'
 
 export default {
   components: { CardIconParagraph },
-  props:{
+  props: {
     content: {
       type: Object,
-      default(){
+      default() {
         return {}
       }
     }
-  },
-  computed: {
-
   }
 }
 </script>

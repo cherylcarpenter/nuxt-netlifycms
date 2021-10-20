@@ -1,0 +1,12 @@
+.cardIconParagraph {
+  > div {
+  @apply mb-6 lg:mb-0;
+
+  }
+  &:last-of-type {
+    >div{
+        @apply mb-0;
+
+    }
+  }
+}
