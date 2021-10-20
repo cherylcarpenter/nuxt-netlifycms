@@ -6,7 +6,7 @@
     "backend": "npx netlify-cms-proxy-server",
     "clean": "rm -fr ./node_modules/.cache",
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "build-storybook": "build-storybook -s ./static",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -21,11 +21,12 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/google-fonts": "^1.3.0",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt-edge": "latest"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@babel/preset-env": "^7.15.8",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/storybook": "^4.1.1",
